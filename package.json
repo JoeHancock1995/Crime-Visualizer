@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JoeHancock1995/Crime-Visualizer/issues"
   },
-  "homepage": "https://github.com/JoeHancock1995/Crime-Visualizer#readme"
+  "homepage": "https://github.com/JoeHancock1995/Crime-Visualizer#readme",
+  "dependencies": {
+    "plotly.js-dist": "^1.57.1"
+  }
 }
