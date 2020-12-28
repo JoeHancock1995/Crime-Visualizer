@@ -1,7 +1,14 @@
 annualHomicide = document.getElementById('annualHomicide');
 Plotly.newPlot(annualHomicide, [{
-    x: [2013, 2014, 2015, 2016, 2017, 2018, 2019],
-    y: [27, 32, 25, 40, 24, 32, 32]
+    x: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
+    y: [39, 27, 33, 25, 31, 23, 39, 25, 32, 33, 42 ]
+}], {
+    margin: { t: 0 }
+});
+annualHomicideRate = document.getElementById('annualHomicideRate');
+Plotly.newPlot(annualHomicideRate, [{
+    x: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
+    y: [5.0, 3.4, 4.0, 3.0, 3.6, 2.6, 4.3, 2.7, 3.4, 3.4 ,4.3]
 }], {
     margin: { t: 0 }
 });
@@ -66,13 +73,13 @@ Plotly.newPlot(monthlyHomicide19, [{
 
 // //Since this is the present year and will require adding an API may be more practical if one can be found rather than adding onto monthly. 
 // // Create a CSV 
-// monthlyHomicide20 = document.getElementById('monthlyHomicide20');
-// Plotly.newPlot(monthlyHomicide20, [{
-//     x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-//     y: [5, 4, 5, 2, 1, 5, 6 , 4, 3, 5, ]
-// }], {
-//     margin: { t: 0 }
-// });
+monthlyHomicide20 = document.getElementById('monthlyHomicide20');
+Plotly.newPlot(monthlyHomicide20, [{
+    x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    y: [5, 4, 5, 2, 1, 5, 6 , 4, 3, 5, 0, 0 ]
+}], {
+    margin: { t: 0 }
+});
 
 
 var murders2013 = {
@@ -119,8 +126,14 @@ var murders2019 = {
     mode: 'lines',
     name: '2019'
 };
+var murders2020 = {
+    x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    y: [5, 4, 5, 2, 1, 5, 6, 4, 3, 5, 0, 0 ],
+    mode: 'lines',
+    name: '2020'
+};
 
-var data = [murders2013, murders2014, murders2015, murders2016, murders2017, murders2018, murders2019];
+var data = [murders2013, murders2014, murders2015, murders2016, murders2017, murders2018, murders2019, murders2020];
 
 var layout = {
     title: 'Austin Homicides 2013-2019'
