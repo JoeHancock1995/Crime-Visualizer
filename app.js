@@ -2,14 +2,14 @@
 annualHomicide = document.getElementById('annualHomicide');
 Plotly.newPlot(annualHomicide, [{
     x: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
-    y: [39, 27, 33, 25, 31, 23, 39, 25, 32, 33, 42 ]
+    y: [39, 27, 33, 25, 31, 23, 39, 25, 32, 33, 47 ]
 }], {
     margin: { t: 0 }
 });
 annualHomicideRate = document.getElementById('annualHomicideRate');
 Plotly.newPlot(annualHomicideRate, [{
     x: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
-    y: [5.0, 3.4, 4.0, 3.0, 3.6, 2.6, 4.3, 2.7, 3.4, 3.4 ,4.3]
+    y: [4.93, 3.32, 3.96, 2.92, 3.52, 2.55, 4.21, 2.69, 3.42, 3.45 ,4.8]
 }], {
     margin: { t: 0 }
 });
@@ -89,7 +89,7 @@ var murders2020 = {
 var data = [murders2010, murders2011, murders2012, murders2013, murders2014, murders2015, murders2016, murders2017, murders2018, murders2019, murders2020];
 
 var layout = {
-    title: 'Austin Homicides 2013-2020'
+    title: 'Austin Homicides 2010-2020'
 };
 
 Plotly.newPlot('myDiv', data, layout);
@@ -100,7 +100,7 @@ Plotly.newPlot('myDiv', data, layout);
 monthlyHomicide10 = document.getElementById('monthlyHomicide10');
 Plotly.newPlot(monthlyHomicide10, [{
     x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    y: [3, 1, 3, 5, 3, 2, 3, 2, 5, 4, 5, 3 ]
+    y: [3, 1, 3, 5, 3, 2, 3, 2, 5, 4, 5, 3 ],
 }], {
     margin: { t: 0 }
 });
@@ -182,7 +182,83 @@ Plotly.newPlot(monthlyHomicide19, [{
 monthlyHomicide20 = document.getElementById('monthlyHomicide20');
 Plotly.newPlot(monthlyHomicide20, [{
     x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    y: [5, 4, 5, 2, 1, 4, 5 ,5, 3, 5, 5, 1 ]
+    y: [5, 4, 5, 2, 1, 5, 6 ,4, 3, 5, 5, 2 ]
 }], {
     margin: { t: 0 }
 });
+
+
+//historogram
+var trace1 = {
+    x: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    y: [3, 1, 3, 5, 3, 2, 3, 2, 5, 4, 5, 3 ],
+    name: '2010',
+    type: 'bar'
+};
+
+var trace2 = {
+    x: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    y: [2, 1, 2, 4, 2, 1, 0, 5, 4, 2, 2, 2],
+    name: '2011',
+    type: 'bar'
+};
+var trace3 = {
+    x: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    y: [3, 1, 2, 5, 2, 4, 3, 1, 4, 2, 5, 1],
+    name: '2012',
+    type: 'bar'
+};
+var trace4 = {
+    x: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    y: [0, 3, 1, 4, 0, 1, 4, 0, 4, 2, 2, 4],
+    name: '2013',
+    type: 'bar'
+};
+var trace5 = {
+    x: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    y: [3, 2, 1, 1, 0, 2, 2, 1, 4, 4, 5, 6],
+    name: '2014',
+    type: 'bar'
+};
+var trace6 = {
+    x: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    y: [1, 1, 2, 4, 1, 0, 2, 1, 1, 0, 6, 3],
+    name: '2015',
+    type: 'bar'
+};
+var trace7 = {
+    x: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    y: [2, 0, 2, 1, 2, 5, 7, 4, 2, 3, 5, 6 ],
+    name: '2016',
+    type: 'bar'
+};
+var trace8 = {
+    x: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    y: [1, 1, 4, 1, 2, 2, 2, 5, 2, 2, 1, 2],
+    name: '2017',
+    type: 'bar'
+};
+var trace9 = {
+    x: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    y: [1, 0, 6, 1, 3, 5, 2, 2, 6, 1, 3, 2],
+    name: '2018',
+    type: 'bar'
+};
+var trace10 = {
+    x: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    y: [2, 1, 4, 1, 2, 3, 6, 4, 2, 1, 3, 4],
+    name: '2019',
+    type: 'bar'
+};
+var trace11 = {
+    x: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    y: [5, 4, 5, 2, 1, 5, 6, 4, 3, 5, 5, 2 ],
+    name: '2020',
+    type: 'bar'
+};
+
+var data = [trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11];
+
+var layout = { barmode: 'group' };
+
+Plotly.newPlot('myDiv', data, layout);
