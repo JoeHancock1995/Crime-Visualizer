@@ -15,6 +15,36 @@ Plotly.newPlot(annualHomicideRate, [{
 });
 
 
+
+
+Plotly.d3.csv(
+    "https://raw.githubusercontent.com/plotly/datasets/master/2015_06_30_precipitation.csv",
+    function (err, rows) {
+        function unpack(rows, key) {
+            return rows.map(function (row) {
+                return row[key];
+            });
+        }
+
+        var data = [
+            {
+                type: "scattermapbox",
+                text: unpack(rows, "Globvalue"),
+                lon: unpack(rows, "Lon"),
+                lat: unpack(rows, "Lat"),
+                marker: { color: "fuchsia", size: 4 }
+            }
+        ];
+
+        var layout = {
+            dragmode: "zoom",
+            mapbox: { style: "open-street-map", center: { lat: 30.286666, lon: -97.733330 }, zoom: 9 },
+            margin: { r: 400, t: 5, b: 5, l: 400 }
+        };
+
+        Plotly.newPlot("myDiv", data, layout);
+    }
+);
 //-------------------------------//
 //Part of Combined Monthly graph
 var murders2010 = {
