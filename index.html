@@ -22,13 +22,20 @@
     <div class="header">
         <h1>Austin, Texas Crime Visualizer</h1>
     </div>
+
     <div class="main">
-        <div id="annualHomicide" style="width:1400px;height:550px;"></div>
-        <div id="annualHomicideRate" style="width:1400px;height:550px;"></div>
-        <div id="annualAgg" style="width:1400px;height:550px;"></div>
-        <div id="annualAuto" style="width:1400px;height:550px;"></div>
-        <div id="annualBurglary" style="width:1400px;height:550px;"></div>
-        <div id="annualRob" style="width:1400px;height:550px;"></div>
+        <h2>Annual Homicides by year</h2>
+            <div id="annualHomicide" style="width:1400px;height:550px;"></div>
+        <h2>Annual Homicide per 100,000 by year</h2>
+            <div id="annualHomicideRate" style="width:1400px;height:550px;"></div>
+        <h2>Total property crime by year</h2>
+            <div id="annualProperty" style="width:1400px;height:550px;"></div>
+        <h2>Annual Aggravated Assaults</h2>
+            <div id="annualAgg" style="width:1400px;height:550px;"></div>
+        <h2>Annual Auto thefts (#of vehicles stolen)</h2>
+            <div id="annualAuto" style="width:1400px;height:550px;"></div>
+        <h2>Annual robberies</h2>
+            <div id="annualRob" style="width:1400px;height:550px;"></div>
         <div id="popStats">
             <h2>Austin Population 2010-2020</h2>
             <ul> 
@@ -45,11 +52,23 @@
                 <li>2020 - 977, 482</li>
             </ul>
         </div>
+        <div class="showcase__section" id="bubble" >
+            <div class="spacer" ></div>
+            <div id="bubbleplots">
+                <div class="bubbleplot"  data-num="0">
+                    <div class="plot" id="plotdiv" ></div>
+                    <div class="control-row">
+                        Year: <select class="yeardata">
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
     <div id='myDiv' style="width: 1400px;height:500px;"></div>
             <div id='myDiv1' style="width: 1400px;height:500px;" >
                 <!-- Plotly chart will be drawn inside this DIV -->
             </div>
-    <div id="title2010"><h2>Annual homicides by month</h2></div>
+    <!-- <div id="title2010"><h2>Annual homicides by month</h2></div>
         <h3>2010</h3>
         <div id="monthlyHomicide10" style="width:1400px;height:250px;"></div>
         <h3>2011</h3>
@@ -72,7 +91,7 @@
         <div id="monthlyHomicide19" style="width:1400px;height:250px;"></div>
         <h3>2020</h3>
         <div id="monthlyHomicide20" style="width:1400px;height:250px;"></div>
-    </div>
+    </div> -->
 </div>
 
 <script src="./app.js"></script>
