@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Joseph Hancock">
+
+    <title>Crime Visualizer</title>
+    
+    <!-- Plotly CDN -->
+    <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js" charset="utf-8"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' /> -->
+    <!-- <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css"> -->
+</head>
+
+<body>
+
+
+
+<script>
+
+    getData();
+
+    async function getData() {
+        const response = await fetch('./CrimeStats/austinCrime.csv');
+        const data = await response.text();
+        console.log(data);
+
+        const rows = data.split('\n').slice(1);
+        console.log(rows);
+    }
+
+   
+</script>
+</body>
+
+</html>

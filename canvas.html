@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script>
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+    };
+
+    fetch("https://data.austintexas.gov/resource/fdj4-gpfu.json?crime_type=MURDER", requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+
+
+
+
+        //We do that to ensure to get a correct JSON
+        // var summary_url = 'https://data.austintexas.gov/resource/fdj4-gpfu.json';
+        
+        // var crime_json = JSON.stringify(crime_data)
+        //     //We can use {'name': 'Lenovo Thinkpad 41A429ff8'} as criteria too
+        // var filtered_json = find_in_object(JSON.parse(crime_json), { crime_type: 'MURDER' });
+        // const murderOnly = JSON.parse(jsondata).filter(({ crime_type }) => crime_type === 'MURDER');
+
+        // function find_in_object(my_object, my_criteria){
+
+        //         return my_object.filter(function (obj) {
+        //             return Object.keys(my_criteria).every(function (c) {
+        //                 return obj[c] == my_criteria[c];
+        //             });
+        //         });
+
+        //     }
+        // window.onload = function () {
+
+        //     var dataPoints = [];
+
+        //     var chart = new CanvasJS.Chart("chartContainer", {
+        //         animationEnabled: true,
+        //         theme: "light2",
+        //         title: {
+        //             text: "crime Rate"
+        //         },
+        //         axisY: {
+        //             title: "# of reported incidents",
+        //             titleFontSize: 24,
+        //             includeZero: true
+        //         },
+        //         data: [{
+        //             type: "column",
+        //             yValueFormatString: "## Units",
+        //             dataPoints: dataPoints
+        //         }]
+        //     });
+
+        //     function addData(crime_type) {
+        //         for (var i = 0; i < crime_type.length; i++) {
+        //             dataPoints.push({
+        //                 x: new occ_date(crime_type[i].v),
+        //                 y: crime_type[i].units
+        //             });
+        //         }
+        //         chart.render();
+
+        //     }
+
+        //     $.getJSON("https://data.austintexas.gov/resource/fdj4-gpfu.json", addData);
+
+        // }
+
+        
+    </script>
+</head>
+
+<body>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+
+</html>

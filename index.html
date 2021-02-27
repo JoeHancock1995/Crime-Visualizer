@@ -26,6 +26,7 @@
     </div>
 
     <div class="main">
+        
         <h2>Annual Homicides by year</h2>
             <div id="annualHomicide" style="width:1400px;height:550px;"></div>
         <h2>Total property crime by year</h2>
@@ -64,10 +65,39 @@
                 </div>
             </div>
         </div>
-    <div id='myDiv' style="width: 1400px;height:500px;"></div>
-            <div id='myDiv1' style="width: 1400px;height:500px;" >
-                <!-- Plotly chart will be drawn inside this DIV -->
-            </div>
+    <script type="text/javascript" src="plotlyjs-bundle.js"></script>
+    
+    
+    <script type="text/javascript" src="figure.js"></script>
+    
+    <div id="9cc2e66a-a1d9-4479-a0d0-cea5187e6bdb" style="width: 1000px; height: 700px;" class="plotly-graph-div"></div>
+    <script type="text/javascript">
+        (function () {
+            window.PLOTLYENV = { 'BASE_URL': 'https://plotly.com' };
+
+            var gd = document.getElementById('9cc2e66a-a1d9-4479-a0d0-cea5187e6bdb')
+            var resizeDebounce = null;
+
+            function resizePlot() {
+                var bb = gd.getBoundingClientRect();
+                Plotly.relayout(gd, {
+                    width: bb.width,
+                    height: bb.height
+                });
+            }
+
+
+
+
+            Plotly.plot(gd, {
+                data: figure.data,
+                layout: figure.layout,
+                frames: figure.frames,
+                config: { "showLink": true, "linkText": "Export to plotly.com", "mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A" }
+            });
+
+        }());
+    </script>
     <!-- <div id="title2010"><h2>Annual homicides by month</h2></div>
         <h3>2010</h3>
         <div id="monthlyHomicide10" style="width:1400px;height:250px;"></div>
