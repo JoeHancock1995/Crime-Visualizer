@@ -17,7 +17,7 @@ Plotly.newPlot(annualAgg, [{
     type: 'line',
     name: 'Aggravated Assaults By year'
 }], {
-        yaxis: { range: [0, 4000] }
+        yaxis: { range: [1800, 3500] }
 });
 
 annualRob = document.getElementById('annualRob');
@@ -27,7 +27,7 @@ Plotly.newPlot(annualRob, [{
     type: 'line',
     name: 'Robbery By year'
 }], {
-        yaxis: { range: [0, 3000] }
+        yaxis: { range: [400, 1250] }
 });
 annualAuto = document.getElementById('annualAuto');
 Plotly.newPlot(annualAuto, [{
@@ -36,7 +36,7 @@ Plotly.newPlot(annualAuto, [{
     type: 'line',
     name: 'Auto theft (# of vehicles) By year'
 }], {
-    yaxis: { range: [0, 5000] }
+    yaxis: { range: [1500, 4000] }
 
 });
 annualProperty = document.getElementById('annualProperty');
@@ -47,7 +47,7 @@ Plotly.newPlot(annualProperty, [{
     type: 'line',
     name: 'Total property crimes by year'
 }], {
-  yaxis: {range: [0, 60000]}
+  yaxis: {range: [30000, 55000]}
 });
 
 
