@@ -20,6 +20,7 @@ Plotly.newPlot(annualAgg, [{
         yaxis: { range: [1800, 3500] }
 });
 
+//Cumulative
 annualRob = document.getElementById('annualRob');
 Plotly.newPlot(annualRob, [{
     x: [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
@@ -29,6 +30,8 @@ Plotly.newPlot(annualRob, [{
 }], {
         yaxis: { range: [400, 1250] }
 });
+
+//Cumulative
 annualAuto = document.getElementById('annualAuto');
 Plotly.newPlot(annualAuto, [{
     x: [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
@@ -37,8 +40,9 @@ Plotly.newPlot(annualAuto, [{
     name: 'Auto theft (# of vehicles) By year'
 }], {
     yaxis: { range: [1500, 4000] }
-
 });
+//Cumulative
+
 annualProperty = document.getElementById('annualProperty');
 Plotly.newPlot(annualProperty, [{
     x: [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
@@ -53,37 +57,37 @@ Plotly.newPlot(annualProperty, [{
 
 
 
-Plotly.d3.csv(
-    "https://raw.githubusercontent.com/plotly/datasets/master/2015_06_30_precipitation.csv",
-    function (err, rows) {
-        function unpack(rows, key) {
-            return rows.map(function (row) {
-                return row[key];
-            });
-        }
+// Plotly.d3.csv(
+//     "https://raw.githubusercontent.com/plotly/datasets/master/2015_06_30_precipitation.csv",
+//     function (err, rows) {
+//         function unpack(rows, key) {
+//             return rows.map(function (row) {
+//                 return row[key];
+//             });
+//         }
 
-        var data = [
-            {
-                type: "scattermapbox",
-                text: unpack(rows, "Globvalue"),
-                lon: unpack(rows, "Lon"),
-                lat: unpack(rows, "Lat"),
-                marker: { color: "fuchsia", size: 4 }
-            }
-        ];
+//         var data = [
+//             {
+//                 type: "scattermapbox",
+//                 text: unpack(rows, "Globvalue"),
+//                 lon: unpack(rows, "Lon"),
+//                 lat: unpack(rows, "Lat"),
+//                 marker: { color: "fuchsia", size: 4 }
+//             }
+//         ];
 
-        var layout = {
-            dragmode: "zoom",
-            mapbox: { style: "open-street-map", center: { lat: 30.286666, lon: -97.733330 }, zoom: 9 },
-            margin: { r: 400, t: 5, b: 5, l: 400 }
-        };
+//         var layout = {
+//             dragmode: "zoom",
+//             mapbox: { style: "open-street-map", center: { lat: 30.286666, lon: -97.733330 }, zoom: 9 },
+//             margin: { r: 400, t: 5, b: 5, l: 400 }
+//         };
 
-        Plotly.newPlot("myDiv", data, layout);
-    }
-);
+//         Plotly.newPlot("myDiv", data, layout);
+//     }
+// );
 
 //=======================stacked graph/y=======================//
-Plotly.d3.csv('./crime.csv', function (err, rows) {
+Plotly.d3.csv('../CrimeStats/crime.csv', function (err, rows) {
 
     function unpack(rows, key) {
         return rows.map(function (row) { return row[key]; });
@@ -229,8 +233,14 @@ var trace11 = {
     name: '2020',
     type: 'bar'
 };
+var trace12 = {
+    x: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    y: [5, 6, 5],
+    name: '2021',
+    type: 'bar'
+};
 
-var data = [trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11];
+var data = [trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12];
 
 var layout = { barmode: 'group' };
 

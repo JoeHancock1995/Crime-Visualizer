@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +10,8 @@
     <title>Crime Visualizer</title>
     
     <!-- Plotly CDN -->
+    <script type="text/javascript" src="./assets/plotlyjs-bundle.js"></script>
+    <script type="text/javascript" src="./assets/figure.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js" charset="utf-8"></script>
     <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
     <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
@@ -27,7 +28,6 @@
     </div>
 
     <div class="main">
-        
         <h2>Annual Homicides by year</h2>
             <div id="annualHomicide" style="width:600px;height:550px;"></div>
         <h2>Total property crime by year</h2>
@@ -54,75 +54,46 @@
                 <li>2020 - 977, 482</li>
             </ul>
         </div>
+        <div class="dropdown_container">
         <div class="showcase__section" id="bubble" >
-            <div class="spacer" ></div>
+            <div class="spacer --small" ></div>
             <div id="bubbleplots">
                 <div class="bubbleplot"  data-num="0">
                     <div class="plot" id="plotdiv" ></div>
-                    <div class="control-row">
+                    <div class="control-row"> 
                         Year: <select class="yeardata">
                         </select>
                     </div>
                 </div>
             </div>
         </div>
-    <script type="text/javascript" src="./assets/plotlyjs-bundle.js"></script>
-    
-    
-    <script type="text/javascript" src="./assets/figure.js"></script>
-    
-    <div id="9cc2e66a-a1d9-4479-a0d0-cea5187e6bdb" style="width: 500px; height: 350px;" class="plotly-graph-div"></div>
-    <script type="text/javascript">
-        (function () {
-            window.PLOTLYENV = { 'BASE_URL': 'https://plotly.com' };
+        </div>
 
-            var gd = document.getElementById('9cc2e66a-a1d9-4479-a0d0-cea5187e6bdb')
-            var resizeDebounce = null;
+        <div id="cf69e16b-24b2-4e5b-8781-79c0ba4d9b2c" style="width: 1000px; height: 700px;" class="plotly-graph-div"></div>
+        <script type="text/javascript">
+            (function () {
+                window.PLOTLYENV = { 'BASE_URL': 'https://plotly.com' };
 
-            function resizePlot() {
-                var bb = gd.getBoundingClientRect();
-                Plotly.relayout(gd, {
-                    width: bb.width,
-                    height: bb.height
+                var gd = document.getElementById('cf69e16b-24b2-4e5b-8781-79c0ba4d9b2c')
+                var resizeDebounce = null;
+
+                function resizePlot() {
+                    var bb = gd.getBoundingClientRect();
+                    Plotly.relayout(gd, {
+                        width: bb.width,
+                        height: bb.height
+                    });
+                }
+
+                Plotly.plot(gd, {
+                    data: figure.data,
+                    layout: figure.layout,
+                    frames: figure.frames,
+                    config: { "showLink": true, "linkText": "Export to plotly.com", "mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A" }
                 });
-            }
 
-
-
-
-            Plotly.plot(gd, {
-                data: figure.data,
-                layout: figure.layout,
-                frames: figure.frames,
-                config: { "showLink": true, "linkText": "Export to plotly.com", "mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A" }
-            });
-
-        }());
-    </script>
-    <!-- <div id="title2010"><h2>Annual homicides by month</h2></div>
-        <h3>2010</h3>
-        <div id="monthlyHomicide10" style="width:1400px;height:250px;"></div>
-        <h3>2011</h3>
-        <div id="monthlyHomicide11" style="width:1400px;height:250px;"></div>
-        <h3>2012</h3>
-        <div id="monthlyHomicide12" style="width:1400px;height:250px;"></div>
-        <h3>2013</h3>
-        <div id="monthlyHomicide13" style="width:1400px;height:250px;"></div>
-        <h3>2014</h3>
-        <div id="monthlyHomicide14" style="width:1400px;height:250px;"></div>
-        <h3>2015</h3>
-        <div id="monthlyHomicide15" style="width:1400px;height:250px;"></div>
-        <h3>2016</h3>
-        <div id="monthlyHomicide16" style="width:1400px;height:250px;"></div>
-        <h3>2017</h3>
-        <div id="monthlyHomicide17" style="width:1400px;height:250px;"></div>
-        <h3>2018</h3>
-        <div id="monthlyHomicide18" style="width:1400px;height:250px;"></div>
-        <h3>2019</h3>
-        <div id="monthlyHomicide19" style="width:1400px;height:250px;"></div>
-        <h3>2020</h3>
-        <div id="monthlyHomicide20" style="width:1400px;height:250px;"></div>
-    </div> -->
+            }());
+            </script> 
 </div>
 
 <script src="./assets/app.js"></script>
