@@ -1,15 +1,15 @@
-//Cumulative
+//Cumulative homicide
 annualHomicide = document.getElementById('annualHomicide');
 Plotly.newPlot(annualHomicide, [{
-    x: [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
-    y: [27, 33, 25, 31, 23, 39, 25, 32, 33, 47 ],
+    x: [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+    y: [27, 33, 25, 31, 23, 39, 25, 32, 33, 47, 26 ],
     type: 'bar',
     name: 'Homicides By year'
 }], {
     yaxis: { range: [0, 50] }
 });
 
-//Cumulative
+//Cumulative agg assault
 annualAgg = document.getElementById('annualAgg');
 Plotly.newPlot(annualAgg, [{
     x: [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
@@ -20,7 +20,7 @@ Plotly.newPlot(annualAgg, [{
         yaxis: { range: [1800, 3500] }
 });
 
-//Cumulative
+//Cumulative Robbery
 annualRob = document.getElementById('annualRob');
 Plotly.newPlot(annualRob, [{
     x: [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
@@ -31,7 +31,7 @@ Plotly.newPlot(annualRob, [{
         yaxis: { range: [400, 1250] }
 });
 
-//Cumulative
+//Cumulative Auto theft
 annualAuto = document.getElementById('annualAuto');
 Plotly.newPlot(annualAuto, [{
     x: [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
@@ -41,8 +41,7 @@ Plotly.newPlot(annualAuto, [{
 }], {
     yaxis: { range: [1500, 4000] }
 });
-//Cumulative
-
+//Cumulative property crime
 annualProperty = document.getElementById('annualProperty');
 Plotly.newPlot(annualProperty, [{
     x: [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
@@ -235,7 +234,7 @@ var trace11 = {
 };
 var trace12 = {
     x: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    y: [5, 6, 5],
+    y: [5, 6, 7, 6],
     name: '2021',
     type: 'bar'
 };
