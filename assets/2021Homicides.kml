@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>2021Homicides.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>2021Homicides</name>
+		<open>1</open>
+		<Placemark>
+			<name>Homicide</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-7000-block-grand-canyon-drive">http://www.austintexas.gov/news/homicide-7000-block-grand-canyon-drive</a>]]></description>
+			<LookAt>
+				<longitude>-97.69501702369934</longitude>
+				<latitude>30.32602863431473</latitude>
+				<altitude>0</altitude>
+				<heading>-1.338975692272923</heading>
+				<tilt>31.45244559969738</tilt>
+				<range>340.88454754304</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.69494943155097,30.32633089073543,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #2</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-5000-brighton-road">http://www.austintexas.gov/news/homicide-5000-brighton-road</a>]]></description>
+			<LookAt>
+				<longitude>-97.7873264948277</longitude>
+				<latitude>30.21905928498004</latitude>
+				<altitude>6.05700082275773</altitude>
+				<heading>3.889959924744057e-05</heading>
+				<tilt>44.95114214276244</tilt>
+				<range>300.5006975705412</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.78735067089119,30.21875655769843,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>homicde #3</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-4600-elmont-drive">http://www.austintexas.gov/news/homicide-4600-elmont-drive</a>]]></description>
+			<LookAt>
+				<longitude>-97.71736888986983</longitude>
+				<latitude>30.2384853715651</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0003035452318656092</heading>
+				<tilt>45.06585085093351</tilt>
+				<range>828.9251578431046</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.71736888986983,30.2384853715651,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>homicde #4</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-1912-w-35th-street">http://www.austintexas.gov/news/homicide-1912-w-35th-street</a>]]></description>
+			<LookAt>
+				<longitude>-97.75548623030225</longitude>
+				<latitude>30.30885262920943</latitude>
+				<altitude>0</altitude>
+				<heading>2.749980710870238e-05</heading>
+				<tilt>46.79938124643196</tilt>
+				<range>245.7530163101585</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.75564439414735,30.30901580403473,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>homicde #5</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-1126-mearns-meadow">http://www.austintexas.gov/news/homicide-1126-mearns-meadow</a>]]></description>
+			<LookAt>
+				<longitude>-97.70099809999499</longitude>
+				<latitude>30.36974769974556</latitude>
+				<altitude>0</altitude>
+				<heading>2.50468681165252e-12</heading>
+				<tilt>0</tilt>
+				<range>999.2303144898289</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.700998099995,30.36974769974557,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>homicide #6</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-6103-manor-road">http://www.austintexas.gov/news/homicide-6103-manor-road</a>]]></description>
+			<LookAt>
+				<longitude>-97.67819608820413</longitude>
+				<latitude>30.3079929195471</latitude>
+				<altitude>0</altitude>
+				<heading>2.607240803261736e-05</heading>
+				<tilt>19.30633268095459</tilt>
+				<range>477.673331860241</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.67834363014912,30.30724602005649,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>homicide #8</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-7100-block-n-ih-35-svrd-sb">http://www.austintexas.gov/news/homicide-7100-block-n-ih-35-svrd-sb</a>]]></description>
+			<LookAt>
+				<longitude>-97.70392889774287</longitude>
+				<latitude>30.33219177152795</latitude>
+				<altitude>0</altitude>
+				<heading>0.0006459129877380197</heading>
+				<tilt>20.53174745464388</tilt>
+				<range>754.7529749370524</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.70529996056818,30.33234160860814,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #7</name>
+			<description><![CDATA[<a href="http://austintexas.gov/news/homicide-2201-willow-creek-dr">austintexas.gov/news/homicide-2201-willow-creek-dr</a>]]></description>
+			<LookAt>
+				<longitude>-97.72983736340628</longitude>
+				<latitude>30.23029924359017</latitude>
+				<altitude>14.84042813911439</altitude>
+				<heading>-9.773397476576268e-06</heading>
+				<tilt>27.74011411108546</tilt>
+				<range>489.3117539810965</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.72983736340628,30.23029924359017,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #9</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-4200-block-s-ih-35-svrd-sb">http://www.austintexas.gov/news/homicide-4200-block-s-ih-35-svrd-sb</a>]]></description>
+			<LookAt>
+				<longitude>-97.72479369972717</longitude>
+				<latitude>30.28610019999581</latitude>
+				<altitude>0</altitude>
+				<heading>1.375558094186156e-10</heading>
+				<tilt>0</tilt>
+				<range>1000.000069448248</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.72296743515949,30.28862529275488,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #10</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-cameron-road-and-mckie-drive">http://www.austintexas.gov/news/homicide-cameron-road-and-mckie-drive</a>]]></description>
+			<LookAt>
+				<longitude>-97.69194997463757</longitude>
+				<latitude>30.32896722076632</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0003803442521188245</heading>
+				<tilt>25.81100368627451</tilt>
+				<range>651.0821565842546</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.69056471600268,30.32905883418469,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #11</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-7000-block-tonka-lane">http://www.austintexas.gov/news/homicide-7000-block-tonka-lane</a>]]></description>
+			<LookAt>
+				<longitude>-97.69631309919998</longitude>
+				<latitude>30.20327692799977</latitude>
+				<altitude>6.51549187914753</altitude>
+				<heading>-0.0007441228526299283</heading>
+				<tilt>52.14500536684812</tilt>
+				<range>219.1204269978542</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.69699374292597,30.20310186290174,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #12</name>
+			<description><![CDATA[<a href="http://austintexas.gov/news/homicide-800-block-w-st-johns-avenue">austintexas.gov/news/homicide-800-block-w-st-johns-avenue</a>]]></description>
+			<LookAt>
+				<longitude>-97.71764675342426</longitude>
+				<latitude>30.33922626812918</latitude>
+				<altitude>0</altitude>
+				<heading>8.517958540567713e-05</heading>
+				<tilt>24.79581370583071</tilt>
+				<range>496.5850042963184</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.71776459578426,30.33934479539794,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #15</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-2200-block-e-riverside-drive">http://www.austintexas.gov/news/homicide-2200-block-e-riverside-drive</a>]]></description>
+			<LookAt>
+				<longitude>-97.72661335010038</longitude>
+				<latitude>30.23897973888241</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0004908943876360371</heading>
+				<tilt>51.01775579970255</tilt>
+				<range>170.6526771125081</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.72661335010037,30.23897973888241,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #17</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-1100-block-kenyon-drive">http://www.austintexas.gov/news/homicide-1100-block-kenyon-drive</a>]]></description>
+			<LookAt>
+				<longitude>-97.79299847956074</longitude>
+				<latitude>30.20611503093468</latitude>
+				<altitude>4.026839453536106</altitude>
+				<heading>-0.0003097766904604581</heading>
+				<tilt>43.03749494255466</tilt>
+				<range>398.0364455959536</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.79201271371161,30.20571604934064,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #16</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-11900-block-pavilion-blvd">http://www.austintexas.gov/news/homicide-11900-block-pavilion-blvd</a>]]></description>
+			<LookAt>
+				<longitude>-97.75620030364307</longitude>
+				<latitude>30.42486897564576</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0002354622905294025</heading>
+				<tilt>14.96794248080052</tilt>
+				<range>633.4321481128944</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.75569192219554,30.42469620113209,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #18</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-6600-block-bradley-dr">http://www.austintexas.gov/news/homicide-6600-block-bradley-dr</a>]]></description>
+			<LookAt>
+				<longitude>-97.67911954831993</longitude>
+				<latitude>30.3155946581069</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0001618326688712157</heading>
+				<tilt>43.37679669375554</tilt>
+				<range>297.5327666636749</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.67893413687946,30.31544428935332,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #19</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-11100-block-n-ih-35-svrd">http://www.austintexas.gov/news/homicide-11100-block-n-ih-35-svrd</a>]]></description>
+			<LookAt>
+				<longitude>-97.67823343331349</longitude>
+				<latitude>30.37490290237182</latitude>
+				<altitude>0</altitude>
+				<heading>7.840332685627015e-06</heading>
+				<tilt>24.04140537388205</tilt>
+				<range>490.7981535800788</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.67835186736458,30.37469209369873,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #20</name>
+			<description><![CDATA[<a href="http://austintexas.gov/news/homicide-9700-block-n-fm-620">austintexas.gov/news/homicide-9700-block-n-fm-620</a>]]></description>
+			<LookAt>
+				<longitude>-97.83871506216936</longitude>
+				<latitude>30.43779495998994</latitude>
+				<altitude>0</altitude>
+				<heading>-0.001315563729415824</heading>
+				<tilt>0</tilt>
+				<range>992.819798006395</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.83670739306731,30.43628594025407,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #21</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-12000-block-dessau-road">http://www.austintexas.gov/news/homicide-12000-block-dessau-road</a>]]></description>
+			<LookAt>
+				<longitude>-97.71950587360172</longitude>
+				<latitude>30.29406030979273</latitude>
+				<altitude>0</altitude>
+				<heading>9.857064248809338e-05</heading>
+				<tilt>49.17336858258172</tilt>
+				<range>298.2005913729803</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.71978999707109,30.29364813025807,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #22</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-7300-block-bluff-springs-rd">http://www.austintexas.gov/news/homicide-7300-block-bluff-springs-rd</a>]]></description>
+			<LookAt>
+				<longitude>-97.76995399996791</longitude>
+				<latitude>30.180659199656</latitude>
+				<altitude>0</altitude>
+				<heading>1.610473862959052e-11</heading>
+				<tilt>0</tilt>
+				<range>999.9999905674324</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.76995399996792,30.18065919965601,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Homicide #23</name>
+			<description><![CDATA[<a href="http://www.austintexas.gov/news/homicide-9400-block-north-lamar-blvd">http://www.austintexas.gov/news/homicide-9400-block-north-lamar-blvd</a>]]></description>
+			<LookAt>
+				<longitude>-97.698061500154</longitude>
+				<latitude>30.36454770030493</latitude>
+				<altitude>11.46849369553636</altitude>
+				<heading>-7.783930499679738e-11</heading>
+				<tilt>0</tilt>
+				<range>988.531497132503</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.698061500154,30.36454770030493,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
