@@ -86,7 +86,7 @@ Plotly.newPlot(annualProperty, [{
 // );
 
 //=======================stacked graph/y=======================//
-Plotly.d3.csv('../CrimeStats/crime.csv', function (err, rows) {
+Plotly.d3.csv('../data/crime.csv', function (err, rows) {
 
     function unpack(rows, key) {
         return rows.map(function (row) { return row[key]; });

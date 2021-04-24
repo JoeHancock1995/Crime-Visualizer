@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/JoeHancock1995/Crime-Visualizer#readme",
   "dependencies": {
+    "cesium": "^1.80.0",
     "d3": "^6.5.0",
     "dash": "^3.17.0",
     "plotly.js-dist": "^1.57.1"
-  },
-  "devDependencies": {}
+  }
 }
