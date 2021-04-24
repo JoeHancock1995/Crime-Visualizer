@@ -10,7 +10,19 @@
 </head>
 
 <body>
-    <div id="cesiumContainer"></div>
+    <div class="container">
+        <div class="header">
+            <h1>Austin, Texas Crime Visualizer</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="map.html">Homicide Map</a></li>
+            </ul>
+        </nav>
+        <div id="cesiumContainer"></div>
+        </div>
+    
     <script>
         var bing = new Cesium.BingMapsImageryProvider({
             url: 'https://dev.virtualearth.net',

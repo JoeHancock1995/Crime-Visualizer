@@ -6,5 +6,8 @@ body {
     height: 60%;
     width: 70%;
     margin-left: 15%;
-    margin-top: 8%;
+    margin-top: 3%;
+}
+li{
+    text-decoration: hidden;
 }
