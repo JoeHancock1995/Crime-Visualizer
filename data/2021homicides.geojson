@@ -390,6 +390,38 @@
                 "name": "Homicide #26",
                 "description": "<a href=\"https://www.austintexas.gov/news/triple-homicide-great-hills-trail-and-rain-creek-parkway\">https://www.austintexas.gov/news/triple-homicide-great-hills-trail-and-rain-creek-parkway</a>"
             }
-        }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    //research blvd
+                    // -97.74736974921427,
+                    // 30.3951951374641,
+                    50.00000000000001
+                ]
+            },
+            "properties": {
+                "name": "Homicide #27",
+                "description": "<a href=\"http://www.austintexas.gov/news/homicide-8100-block-research-boulevard\">http://www.austintexas.gov/news/homicide-8100-block-research-boulevard</a>"
+            }
+        },
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            //bluff springs
+                            // -97.74736974921427,
+                            // 30.3951951374641,
+                            50.00000000000001
+                        ]
+                    },
+                    "properties": {
+                        "name": "Homicide #28",
+                        // "description": "<a href=\"http://www.austintexas.gov/news/homicide-8100-block-research-boulevard\">http://www.austintexas.gov/news/homicide-8100-block-research-boulevard</a>"
+                    }
+                }
     ]
 }
